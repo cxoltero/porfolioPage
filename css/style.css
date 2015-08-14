@@ -1,0 +1,133 @@
+*{
+	padding: 0;;
+	margin: 0;
+}
+
+body, html { 
+  background: url(../images/backDev.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-height: 820px;
+}
+
+.navbar{
+	height: 60px;
+	background-color: black;
+}
+.navbar select{
+display: none;
+}
+
+.navbar ul{
+	text-align: center;
+}
+
+.navbar li, .social li{
+	display: inline-block;
+	text-align: center;
+	margin-top: 25px;
+	width: 20%;
+}
+
+.navbar li a{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1.5em;
+}
+
+.navbar li a:hover{
+	color: #F5003D;
+}
+
+.mainbody{
+	display: inline-block;
+	width: 35%;
+	text-align: center;
+	margin-left: 32.5%;
+	margin-top: 20%;
+	height: 35%;
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 5px;
+}
+
+#profile{
+	min-width: 90px;
+	width: 40%;
+	border-radius: 50%;
+	-moz-box-shadow:    0 5px 6px 3px #ccc;
+	-webkit-box-shadow: 0 5px 6px 3px #ccc;
+	box-shadow:         0 5px 6px 3px #ccc;
+	-moz-border-radius:50%; 
+	-webkit-border-radius:50%; 
+	border-radius:50%;
+	margin-top: -175px;
+}
+#name{
+	font-family: 'Qwigley', cursive;
+	font-size: 3.5em;
+	letter-spacing: 2px;
+	color: #3333CC;
+}
+
+#location{
+	font-size: .75em;
+}
+
+#job{
+	margin-top: 5px;
+	font-size: 1.25em;
+	color: #44749D;
+}
+
+.inner{
+/*margin-top: 50%;*/
+
+}
+
+.social ul{
+	min-height: 100px;
+	padding-left: 0;	
+}
+
+
+
+.social img{
+	width: 80%;
+	-moz-box-shadow:    0 5px 6px 3px #c8c8c8;
+	-webkit-box-shadow: 0 5px 6px 3px #c8c8c8;
+	box-shadow:         0 5px 6px 3px #c8c8c8;
+	-moz-border-radius:50%; 
+	-webkit-border-radius:50%; 
+	border-radius:50%;
+	margin: 10px;
+}
+hr {
+	margin-top: 20%;
+	margin-left: 10%;
+	width: 80%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 600px) {
+  .mainbody{
+  	margin-top: 80px;
+  	display: inline-block;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+	max-height: 500px;
+  }
+  .navbar ul{
+  	display: none;
+  }
+  .navbar select{
+	display: inline-block;
+  }
+}
+
