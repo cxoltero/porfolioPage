@@ -30,12 +30,17 @@ display: none;
 	margin-top: 25px;
 	width: 20%;
 }
-.navbar-hide li{
+#navLogo, #navLogo a{
 	display: inline-block;
 	text-align: left;
 	margin-top: 15px;
 	margin-left: 10%;
+	text-decoration: none;
+	font-size: 1.65rem;
+  	font-family: 'Qwigley', cursive;
+  	color: #c3c3c3;
 }
+
 
 
 .navbar li a{
@@ -46,10 +51,6 @@ display: none;
 	font-size: 1.5em;
 }
 
- .navbar-hide li a{
- 	color: white;
- 	text-decoration: none;
- }
 
 .navbar li a:hover{
 	color: #F5003D;
@@ -145,11 +146,6 @@ hr {
   	display: none;
   }
 
-  #navLogo{
-  	font-size: 1.65rem;
-  	font-family: 'Qwigley', cursive;
-  	color: #c3c3c3;
-  }
   .navbar{
   	display: none;
   }
@@ -158,3 +154,41 @@ hr {
   }
 }
 
+/* ####################This is the animation for the hamburguer sign  ####################*/
+
+#nav-toggle { position: absolute; right: 10%; top: 15px; }
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #c3c3c3;
+  position: absolute;
+  display: block;
+  content: '';
+
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}

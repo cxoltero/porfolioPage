@@ -5,4 +5,8 @@ $(document).ready(function(){
 	}).mouseout(function() {
 	    $(this).css("width", "80%");
 	});
+
+	$('#nav-toggle').click(function(){
+		$(this).toggleClass("active");
+	});
 })
