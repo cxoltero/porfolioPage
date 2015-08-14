@@ -12,7 +12,7 @@ body, html {
   max-height: 820px;
 }
 
-.navbar{
+.navbar, .navbar-hide{
 	height: 60px;
 	background-color: black;
 }
@@ -30,6 +30,13 @@ display: none;
 	margin-top: 25px;
 	width: 20%;
 }
+.navbar-hide li{
+	display: inline-block;
+	text-align: left;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
 
 .navbar li a{
 	color: white;
@@ -38,6 +45,11 @@ display: none;
 	font-family: 'Orbitron', sans-serif;
 	font-size: 1.5em;
 }
+
+ .navbar-hide li a{
+ 	color: white;
+ 	text-decoration: none;
+ }
 
 .navbar li a:hover{
 	color: #F5003D;
@@ -114,6 +126,11 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+@media (min-width: 640px) {
+	.navbar-hide{
+		display: none;
+	}
+}
 
 @media (max-width: 640px) {
   .mainbody{
@@ -125,12 +142,22 @@ hr {
 	max-height: 500px;
   }
   #name{
-  	font-size: 2em;
-  }
-  .navbar ul{
   	display: none;
   }
+
+  #navLogo{
+  	font-size: 1.65rem;
+  	font-family: 'Qwigley', cursive;
+  	color: #c3c3c3;
+  }
+  .navbar{
+  	display: none;
+  }
+<<<<<<< HEAD
   .navbar select {
+=======
+  .navbar-res select{
+>>>>>>> master
 	display: inline-block;
   }
 }
