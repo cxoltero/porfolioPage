@@ -130,7 +130,7 @@ hr {
   .navbar ul{
   	display: none;
   }
-  .navbar select{
+  .navbar select {
 	display: inline-block;
   }
 }
