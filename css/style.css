@@ -34,7 +34,7 @@ display: none;
 	display: inline-block;
 	text-align: left;
 	margin-top: 15px;
-	margin-left: 15px;
+	margin-left: 10%;
 }
 
 
@@ -141,7 +141,7 @@ hr {
 	margin-left: 25%;
 	max-height: 500px;
   }
-  #name{
+  #name, #location{
   	display: none;
   }
 
@@ -153,11 +153,7 @@ hr {
   .navbar{
   	display: none;
   }
-<<<<<<< HEAD
   .navbar select {
-=======
-  .navbar-res select{
->>>>>>> master
 	display: inline-block;
   }
 }
