@@ -21,22 +21,6 @@ body, html {
 	margin-top: 1%;
 }
 
-.aboutPage{
-	background-color: rgba(255, 255, 255, .75);
-}
-.resumeLeft{
-	float: left;
-	width: 30%;
-	/*background-color: red;*/
-	display: inline-block;
-}
-.resumeRight{
-	float:right;
-	width: 	70%;
-	/*background-color: black;*/
-	display: inline-block;
-}
-
 .navbar, .navbar-hide{
 	height: 60px;
 	background-color: black;
@@ -78,7 +62,7 @@ display: none;
 
 
 .navbar li a:hover{
-	color: #F5003D;
+	color: #1791A3;
 }
 
 .mainbody{
@@ -127,6 +111,7 @@ display: none;
 }
 
 .social ul{
+	/*float: left;*/
 	min-height: 100px;
 	padding-left: 0;	
 }
@@ -152,15 +137,19 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-@media (min-width: 640px) {
+@media (min-width: 720px) {
 	.navbar-hide{
 		display: none;
 	}
+	.navbar-hide ul li{
+		display: block;
+		color: white;
+	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .mainbody{
-  	margin-top: 120px;
+  	margin-top: 150px;
   	display: inline-block;
 	width: 50%;
 	text-align: center;
@@ -177,9 +166,139 @@ hr {
   .navbar select {
 	display: inline-block;
   }
+
+}
+/* ####################About Page  ####################*/
+#aboutBg{
+	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
 }
 
-/* ####################This is the animation for the hamburguer sign  ####################*/
+
+.aboutHeader{
+	display: block;
+	width: 100%;
+	height: 20vh;
+	background-color: #1791A3;
+
+}
+
+.headImg{
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 25%;
+
+}
+
+.headImg img{
+	width: 250%;
+	border-radius: 50%;
+	margin-left: 80%;
+	margin-top: 15%;
+}
+
+.headTitle{
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin-top: 3.5%;
+	margin-left: 3%;
+}
+.headTitle h1{
+	font-size: 3.8;
+	color: #f1f1f1;
+	text-align: right;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: .5vh;
+}
+.headTitle span{
+	font-size: 7vh;
+}
+.headTitle h5{
+	color:#C1C1C1;
+	text-align: right;
+	font-size: 2vh;
+	line-height: 50%;
+	letter-spacing: .15vw;
+}
+.headContact{
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 90%;
+	text-align: left;
+}
+.headContact b{
+	margin-left: 2vw;
+	font-size: 1.5vw;
+}
+.headContact p{
+	font-size: 1.5vw;
+	color: #001f3f;
+	margin-left: 5%;
+}
+
+.resumeBody{
+	margin-top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	float: left;
+}
+.resumeRight{
+	display: inline-block;
+	width: 30%;
+	background-color: #ACC2C8;
+	height: 100%;
+	float: right;
+}
+
+.resumeLeft{
+	display: inline-block;
+	width: 70%;
+	/*background-color: #f1f1f1;*/
+	height: 100%;
+}
+.resumeContent{
+	display: block;
+	font-size: 3.75vh;
+	color: #F04710;
+	font-family: 'Quicksand', sans-serif;
+	padding: 15px;
+	width: 100%;}
+
+.resumeHeader{
+	display: block;
+	position: relative;
+	font-size: 2.75vh;
+	font-family: 'Quicksand', sans-serif;
+	clear: both;
+
+}
+.headInfo{
+	text-align: right;
+	margin-top:2.5%;
+	margin-right: 3%;
+	line-height: 120%;
+	float: right;
+	display: inline-block;
+	height: 15vh;
+}
+.headInfo p{
+	font-size: 2vh;
+}
+
+
+
+
+/* ####################This is the animation for the hamburger sign  ####################*/
 
 #nav-toggle { position: absolute; right: 10%; top: 15px; }
 
